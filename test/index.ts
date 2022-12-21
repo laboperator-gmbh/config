@@ -3,11 +3,16 @@ import path from 'path';
 
 import a from './a';
 
-console.log(path.basename(__dirname));
-a();
-
-const b = 1;
+console.log(__dirname |> path.basename(%));
 
 a();
 
-console.log(b);
+const envars = { a: 1 };
+
+a();
+
+console.log(
+  Object.keys(envars)
+    .map((envar) => `${envar}=${envars[envar]}`)
+    .join(' ') |> `$ ${%}`
+);

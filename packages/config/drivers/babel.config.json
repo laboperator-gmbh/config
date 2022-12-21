@@ -1,0 +1,4 @@
+{
+  "extends": "../babel.config",
+  "targets": { "node": "12.18" }
+}

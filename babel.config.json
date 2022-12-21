@@ -1,0 +1,3 @@
+{
+  "extends": "@labforward/config/babel.config"
+}

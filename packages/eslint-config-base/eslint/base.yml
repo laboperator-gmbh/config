@@ -180,7 +180,7 @@ overrides:
   - files:
       - '**/*.ts'
       - '**/*.tsx'
-    parser: '@typescript-eslint/parser' # https://github.com/babel/babel/tree/main/eslint/babel-eslint-parser#typescript
+    parser: '@babel/eslint-parser'
     plugins:
       - '@typescript-eslint'
     extends:
