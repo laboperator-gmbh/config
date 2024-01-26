@@ -13,7 +13,7 @@
     "bump:apply": "yarn version check && yarn version apply --all",
     "lint": "eslint . .circleci",
     "lint:fix": "eslint . .circleci --fix",
-    "postinstall": "husky install",
+    "postinstall": "husky",
     "sort": "sort-package-json ./package.json packages/*/package.json",
     "yolo": "node .circleci/publish.mjs"
   },
