@@ -1966,16 +1966,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^13.19.0, globals@npm:^13.20.0":
-  version: 13.21.0
-  resolution: "globals@npm:13.21.0"
-  dependencies:
-    type-fest: "npm:^0.20.2"
-  checksum: 90573e825401adbe0ef25db1b52e8f74afe4a1087049edd972f1ace77b391753fc3fe51eba9b6962c62e2282645f0a27ce20251662cdc247631c4861f32d56eb
-  languageName: node
-  linkType: hard
-
-"globals@npm:^13.24.0":
+"globals@npm:^13.19.0, globals@npm:^13.20.0, globals@npm:^13.24.0":
   version: 13.24.0
   resolution: "globals@npm:13.24.0"
   dependencies:
