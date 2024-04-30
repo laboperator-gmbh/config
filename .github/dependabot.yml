@@ -11,6 +11,19 @@ updates:
       - "dependencies"
       - "automerge"
       - "kodiak: merge.method = 'squash'"
+    ignore:
+      # jest depends on @typescript-eslint/utils@^v6.0.0
+      #
+      #   ref:
+      #     - https://github.com/jest-community/eslint-plugin-jest/blob/v28.3.0/package.json#L68
+      #     - https://github.com/jest-community/eslint-plugin-jest/pull/1567
+      #
+      - dependency-name: "@typescript-eslint/eslint-plugin"
+        versions:
+          - '> 7'
+      - dependency-name: "@typescript-eslint/parser"
+        versions:
+          - '> 7'
     groups:
       babel:
         patterns:
