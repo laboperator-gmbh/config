@@ -1,1 +1,1 @@
-# @labforward/config
+# @laboperator/config

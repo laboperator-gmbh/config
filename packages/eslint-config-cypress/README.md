@@ -1,1 +1,1 @@
-# @labforward/eslint-config-cypress
+# @laboperator/eslint-config-cypress

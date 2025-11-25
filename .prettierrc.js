@@ -1,1 +1,1 @@
-module.exports = require('@labforward/config/prettier');
+module.exports = require('@laboperator/config/prettier');

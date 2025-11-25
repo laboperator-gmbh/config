@@ -1,8 +1,8 @@
-# @labforward/eslint-config-drivers
+# @laboperator/eslint-config-drivers
 
 Provide configuration files for Laboperator driver-related repositories.
 
-Usage `yarn add -D @labforward/eslint-config-drivers`
+Usage `yarn add -D @laboperator/eslint-config-drivers`
 
 ## For JavaScript Projects
 
@@ -12,14 +12,14 @@ Create a `.eslintrc.js` file with the following contents to extend this config:
 
 ```javascript
 module.exports = {
-  extends: '@labforward/eslint-config-drivers',
+  extends: '@laboperator/eslint-config-drivers',
 };
 ```
 
 Create a `.prettierrc.js` file with the following contents to extend this config:
 
 ```javascript
-module.exports = require('@labforward/config/prettier');
+module.exports = require('@laboperator/config/prettier');
 ```
 
 ## For TypeScript Projects
@@ -30,7 +30,7 @@ Create a `tsconfig.json` file with the following contents to extend this config:
 
 ```json
 {
-  "extends": "@labforward/eslint-config-drivers",
+  "extends": "@laboperator/eslint-config-drivers",
   "compilerOptions": {
     "outDir": "dist",
     "rootDirs": ["src", "spec"]
@@ -54,7 +54,7 @@ Create a `.eslintrc.js` file with the following contents to extend this config:
 
 ```javascript
 module.exports = {
-  extends: '@labforward/eslint-config-drivers',
+  extends: '@laboperator/eslint-config-drivers',
   parserOptions: {
     tsconfigRootDir: __dirname,
   },
@@ -64,5 +64,5 @@ module.exports = {
 Create a `.prettierrc.js` file with the following contents to extend this config:
 
 ```javascript
-module.exports = require('@labforward/config/prettier');
+module.exports = require('@laboperator/config/prettier');
 ```

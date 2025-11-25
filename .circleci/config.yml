@@ -15,7 +15,7 @@ commands:
       - run:
           name: Authenticate NPM
           command: |
-            npm set "@labforward:registry" "https://registry.npmjs.org/"
+            npm set "@laboperator:registry" "https://registry.npmjs.org/"
             npm set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN_WRITE}"
   yarn_cache_install:
     steps:
