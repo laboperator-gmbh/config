@@ -1,0 +1,9 @@
+{
+  "extends": "@laboperator/config/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDirs": ["spec"],
+    "baseUrl": "."
+  },
+  "include": ["packages/**/*", "spec/**/*"]
+}

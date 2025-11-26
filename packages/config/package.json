@@ -11,12 +11,8 @@
   "license": "Apache-2.0",
   "author": "Laboperator GmbH",
   "exports": {
-    "./drivers/*": "./drivers/*.js",
-    "./drivers/tsconfig.json": "./drivers/tsconfig.json",
-    "./drivers/tsconfig": "./drivers/tsconfig.json",
-    "./import-sort": "./import-sort.js",
-    "./prettier": "./.prettierrc.js",
-    "./tsconfig.json": "./tsconfig.json",
+    "./drivers/*": "./drivers/*",
+    "./prettier": "./.prettierrc.json",
     "./tsconfig": "./tsconfig.json"
   },
   "scripts": {
@@ -27,6 +23,10 @@
     "prettier": "^3.7.4",
     "sort-package-json": "^3.5.0",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0"
   },
   "publishConfig": {
     "access": "public"
