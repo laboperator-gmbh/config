@@ -1,1 +1,1 @@
-# @labforward/eslint-config-node
+# @laboperator/eslint-config-node

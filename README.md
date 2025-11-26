@@ -1,13 +1,13 @@
-# @labforward/config
+# @laboperator/config
 
 ## Packages
 
-- [@labforward/config](./packages/config/README.md)
-- [@labforward/eslint-config-base](./packages/eslint-config-base/README.md)
-- [@labforward/eslint-config-cypress](./packages/eslint-config-cypress/README.md)
-- [@labforward/eslint-config-drivers](./packages/eslint-config-drivers/README.md)
-- [@labforward/eslint-config-node](./packages/eslint-config-node/README.md)
-- [@labforward/eslint-config-react](./packages/eslint-config-react/README.md)
+- [@laboperator/config](./packages/config/README.md)
+- [@laboperator/eslint-config-base](./packages/eslint-config-base/README.md)
+- [@laboperator/eslint-config-cypress](./packages/eslint-config-cypress/README.md)
+- [@laboperator/eslint-config-drivers](./packages/eslint-config-drivers/README.md)
+- [@laboperator/eslint-config-node](./packages/eslint-config-node/README.md)
+- [@laboperator/eslint-config-react](./packages/eslint-config-react/README.md)
 
 ## Contributing
 
@@ -39,10 +39,10 @@ Run `verdaccio` in a second terminal. Visit `http://localhost:4873` to confirm t
 
 Backup your `~/.npmrc` file, since the following steps will modify it.
 
-Configure NPM to use the local registry for all `@labforward` packages.
+Configure NPM to use the local registry for all `@laboperator` packages.
 
 ```bash
-npm set "@labforward:registry" "http://localhost:4873"
+npm set "@laboperator:registry" "http://localhost:4873"
 npm adduser --registry http://localhost:4873 # Use your GitHub username and email.
 ```
 

@@ -1,18 +1,18 @@
 {
-  "name": "@labforward/eslint-config-node",
+  "name": "@laboperator/eslint-config-node",
   "version": "0.1.8",
   "description": "",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/labforward/config.git",
+    "url": "https://github.com/laboperator/config.git",
     "directory": "packages/eslint-config-node"
   },
   "license": "Apache-2.0",
-  "author": "labforward GmbH",
+  "author": "Laboperator GmbH",
   "main": "./eslint/index.js",
   "dependencies": {
-    "@labforward/eslint-config-base": "~0.1.8",
+    "@laboperator/eslint-config-base": "~0.1.8",
     "@types/node": "*"
   },
   "publishConfig": {
