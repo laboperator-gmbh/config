@@ -220,5 +220,7 @@ overrides:
 
       '@typescript-eslint/member-ordering':
         - warn
-        - default:
+        - interfaces:
+            order: natural-case-insensitive
+          typeLiterals:
             order: natural-case-insensitive
