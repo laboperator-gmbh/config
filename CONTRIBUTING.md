@@ -2,8 +2,8 @@
 
 ## Developing
 
-1. Run `npm install -g yarn` to update the global yarn version to the latest v1.
-2. Run `yarn install` to install dependencies.
+1. Run `corepack enable`
+2. Run `yarn` to install dependencies.
 
 ## Pull Requests
 
@@ -21,4 +21,4 @@ Make sure to pull the latest changes from `main` and `develop`.
 
 Run `yarn bump:apply` at the repo's root to apply the current release strategy.
 
-Then follow the standard release process for Labforward.
+Then follow the standard release process.
