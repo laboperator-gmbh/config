@@ -1,6 +1,6 @@
 {
   "name": "@laboperator/workspace",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": true,
   "description": "",
   "license": "Apache-2.0",
@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
-    "@laboperator/config": "~0.1.8",
-    "@laboperator/eslint-config-node": "~0.1.8",
+    "@laboperator/config": "~0.1.9",
+    "@laboperator/eslint-config-node": "~0.1.9",
     "eslint": "^8.57.1",
     "execa": "^9.6.0",
     "fs-extra": "^11.3.2",
