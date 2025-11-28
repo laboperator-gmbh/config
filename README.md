@@ -1,19 +1,19 @@
-# @laboperator/config
+# @laboperator-gmbh/config
 
 ## Packages
 
-- [@laboperator/config](./packages/config/README.md)
-- [@laboperator/eslint-config-base](./packages/eslint-config-base/README.md)
-- [@laboperator/eslint-config-cypress](./packages/eslint-config-cypress/README.md)
-- [@laboperator/eslint-config-drivers](./packages/eslint-config-drivers/README.md)
-- [@laboperator/eslint-config-node](./packages/eslint-config-node/README.md)
-- [@laboperator/eslint-config-react](./packages/eslint-config-react/README.md)
+- [@laboperator-gmbh/config](./packages/config/README.md)
+- [@laboperator-gmbh/eslint-config-base](./packages/eslint-config-base/README.md)
+- [@laboperator-gmbh/eslint-config-cypress](./packages/eslint-config-cypress/README.md)
+- [@laboperator-gmbh/eslint-config-drivers](./packages/eslint-config-drivers/README.md)
+- [@laboperator-gmbh/eslint-config-node](./packages/eslint-config-node/README.md)
+- [@laboperator-gmbh/eslint-config-react](./packages/eslint-config-react/README.md)
 
 ## Contributing
 
 ### Prerequisites
 
-The repo makes use of yarn 3 workspaces with additional plugins to manage [Release Workflow](https://yarnpkg.com/features/release-workflow).
+The repo makes use of Yarn 4+ workspaces with additional plugins to manage [Release Workflow](https://yarnpkg.com/features/release-workflow).
 
 If you haven't yet, run `corepack enable` once which would enable [automatic switching](https://nodejs.org/api/corepack.html) between different version of package manager as requested by the `packageManager` key inside `package.json`
 
@@ -46,14 +46,28 @@ npm set "@laboperator:registry" "http://localhost:4873"
 npm adduser --registry http://localhost:4873 # Use your GitHub username and email.
 ```
 
+Yarn 4+ no longer reads `~/.npmrc` and need to be configured separately. Add the following to `~/.yarnrc.yml`
+
+```yaml
+npmScopes:
+  laboperator:
+    npmRegistryServer: http://localhost:4873
+    npmPublishRegistry: http://localhost:4873
+
+unsafeHttpWhitelist:
+  - localhost
+```
+
+then run `yarn npm login --scope laboperator`.
+
 #### Publishing to Verdaccio
 
 Make sure that Verdaccio is running in the background. Otherwise run `verdaccio`
 
 :warning: Always double check that your `~/.npmrc` file is configured to publish to the local registry.
 
-To publish all packages run `yarn yolo`
+To publish all packages run `yarn workspaces foreach --all --exclude root exec npm publish --provenance`
 
 Confirm that the packages were published by visiting: `http://localhost:4873`
 
-To unpublish packages run `yarn workspaces foreach exec npm unpublish --force`
+To unpublish packages run `yarn workspaces foreach --all --exclude root exec npm unpublish --force`

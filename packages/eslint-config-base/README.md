@@ -1,1 +1,1 @@
-# @laboperator/eslint-config-base
+# @laboperator-gmbh/eslint-config-base

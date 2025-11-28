@@ -10,13 +10,6 @@ aliases:
     working_directory: ~/repo
 
 commands:
-  npm_login:
-    steps:
-      - run:
-          name: Authenticate NPM
-          command: |
-            npm set "@laboperator:registry" "https://registry.npmjs.org/"
-            npm set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN_WRITE}"
   yarn_cache_install:
     steps:
       - restore_cache:
@@ -28,16 +21,6 @@ commands:
           paths:
             - ~/.yarn/berry
           key: packages-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}
-  install_gh:
-    steps:
-      - run:
-          name: Install GitHub CLI
-          command: |
-            cli_url=$(curl -s --header "X-GitHub-Api-Version:2022-11-28" https://api.github.com/repos/cli/cli/releases/tags/v2.21.1 | grep -o "http.*linux_amd64.deb")
-            curl -L -o ~/cli.deb ${cli_url}
-            sudo apt install ~/cli.deb
-            echo ${GITHUB_ACCESS_TOKEN} | gh auth login --with-token
-            gh auth status
 
 jobs:
   check:
@@ -64,38 +47,9 @@ jobs:
       - checkout
       - yarn_cache_install
       - run: yarn lint
-  release:
-    <<: *node_env
-    steps:
-      - checkout
-      - install_gh
-      - npm_login
-      - yarn_cache_install
-      - run: yarn yolo
-      - run:
-          name: Publish GitHub release
-          command: |
-            VERSION=v$(jq -r '.version' package.json)
-            gh repo set-default
-            gh release create $VERSION --title "$VERSION" --target $CIRCLE_SHA1 --generate-notes
 
 workflows:
   tests:
     jobs:
       - check
       - lint
-      - release-approval:
-          filters: &filters_only_release_branches
-            branches:
-              only: /release\/.*/
-          type: approval
-          requires:
-            - check
-            - lint
-      - release:
-          filters: *filters_only_release_branches
-          context:
-            - gh-repo-token
-            - npm-publishing
-          requires:
-            - release-approval
