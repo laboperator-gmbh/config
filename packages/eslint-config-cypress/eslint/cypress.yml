@@ -1,5 +1,5 @@
 extends:
-  - '@laboperator/eslint-config-base'
+  - '@laboperator-gmbh/eslint-config-base'
   - plugin:cypress/recommended
   - plugin:mocha/recommended
 plugins:

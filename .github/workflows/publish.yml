@@ -1,0 +1,41 @@
+name: Publish to NPM
+
+on:
+  push:
+    branches: ['release/**']
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: fregante/setup-git-user@v1
+      - run: corepack enable
+
+      - name: Set Node Registry For Publishing
+        uses: actions/setup-node@v5
+        with:
+          node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
+
+      - run: yarn install
+
+      - name: Publish to NPM
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn workspaces foreach --all --exclude root exec npm publish
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REF_NAME: ${{ github.ref_name }}
+          SHA: ${{ github.sha }}
+        run: |
+          VERSION=(${REF_NAME/\// })
+
+          gh release create ${VERSION[1]} --title "${VERSION[1]}" --target $SHA --generate-notes

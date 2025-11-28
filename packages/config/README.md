@@ -1,1 +1,1 @@
-# @laboperator/config
+# @laboperator-gmbh/config
