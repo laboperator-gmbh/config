@@ -14,12 +14,13 @@ rules:
     - warn
     - properties: never
   'class-methods-use-this': warn
+  'import/no-extraneous-dependencies': warn
   'no-console': warn
   'no-underscore-dangle':
     - warn
     - allow: ['_updateCycle']
       allowAfterThis: true
-  'import/no-extraneous-dependencies': warn
+  'sort-keys': 'off'
 
 overrides:
   - files: ['**/*.ts', '**/*.tsx']
