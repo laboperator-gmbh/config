@@ -66,7 +66,7 @@ Make sure that Verdaccio is running in the background. Otherwise run `verdaccio`
 
 :warning: Always double check that your `~/.npmrc` file is configured to publish to the local registry.
 
-To publish all packages run `yarn workspaces foreach --all --exclude root exec npm publish --provenance`
+To publish all packages run `yarn publish`
 
 Confirm that the packages were published by visiting: `http://localhost:4873`
 
