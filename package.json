@@ -14,6 +14,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "postinstall": "husky",
+    "publish": "node ./.github/scripts/publish.mjs",
     "sort": "sort-package-json ./package.json packages/*/package.json"
   },
   "devDependencies": {
