@@ -1,7 +1,7 @@
 extends:
-  - "@laboperator/eslint-config-base"
+  - '@laboperator-gmbh/eslint-config-base'
 parserOptions:
-  sourceType: "module"
+  sourceType: 'module'
 env:
   node: true
   es6: true

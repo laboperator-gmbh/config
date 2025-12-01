@@ -1,5 +1,5 @@
 {
-  "extends": "@laboperator/config/tsconfig",
+  "extends": "@laboperator-gmbh/config/tsconfig",
   "compilerOptions": {
     "lib": ["esnext", "dom"]
   }

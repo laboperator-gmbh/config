@@ -1,5 +1,5 @@
 {
-  "name": "@laboperator/workspace",
+  "name": "root",
   "version": "0.1.9",
   "private": true,
   "description": "",
@@ -11,16 +11,15 @@
   "scripts": {
     "bump": "yarn version check --interactive",
     "bump:apply": "yarn version check && yarn version apply --all",
-    "lint": "eslint . .circleci",
-    "lint:fix": "eslint . .circleci --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "postinstall": "husky",
-    "sort": "sort-package-json ./package.json packages/*/package.json",
-    "yolo": "node .circleci/publish.mjs"
+    "sort": "sort-package-json ./package.json packages/*/package.json"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
-    "@laboperator/config": "~0.1.9",
-    "@laboperator/eslint-config-node": "~0.1.9",
+    "@laboperator-gmbh/config": "~0.1.9",
+    "@laboperator-gmbh/eslint-config-node": "~0.1.9",
     "eslint": "^8.57.1",
     "execa": "^9.6.0",
     "fs-extra": "^11.3.2",

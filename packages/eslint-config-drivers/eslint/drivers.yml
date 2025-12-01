@@ -1,4 +1,4 @@
-extends: '@laboperator/eslint-config-base'
+extends: '@laboperator-gmbh/eslint-config-base'
 parser: ''
 parserOptions:
   ecmaVersion: 2018

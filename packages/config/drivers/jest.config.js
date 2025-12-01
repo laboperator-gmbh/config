@@ -11,7 +11,7 @@ const findEsModules = (packageJsonFile) => {
   );
 
   Object.entries(dependencies)
-    .filter(([_, version]) => version.includes('github.com/laboperator'))
+    .filter(([_, version]) => version.includes('github.com/laboperator-gmbh'))
     .forEach(([name]) => {
       // Dependency has been filtered to be an internal one.
       esModules.add(name);
