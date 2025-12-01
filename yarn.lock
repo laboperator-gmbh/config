@@ -333,7 +333,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@laboperator/config@npm:~0.1.8, @laboperator/config@workspace:packages/config":
+"@laboperator/config@npm:~0.1.9, @laboperator/config@workspace:packages/config":
   version: 0.0.0-use.local
   resolution: "@laboperator/config@workspace:packages/config"
   dependencies:
@@ -344,12 +344,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@laboperator/eslint-config-base@npm:~0.1.8, @laboperator/eslint-config-base@workspace:packages/eslint-config-base":
+"@laboperator/eslint-config-base@npm:~0.1.9, @laboperator/eslint-config-base@workspace:packages/eslint-config-base":
   version: 0.0.0-use.local
   resolution: "@laboperator/eslint-config-base@workspace:packages/eslint-config-base"
   dependencies:
     "@babel/eslint-parser": "npm:^7.28.5"
-    "@laboperator/config": "npm:~0.1.8"
+    "@laboperator/config": "npm:~0.1.9"
     "@typescript-eslint/eslint-plugin": "npm:^8.48.0"
     "@typescript-eslint/parser": "npm:^8.48.0"
     eslint: "npm:^8.57.1"
@@ -366,7 +366,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@laboperator/eslint-config-cypress@workspace:packages/eslint-config-cypress"
   dependencies:
-    "@laboperator/eslint-config-base": "npm:~0.1.8"
+    "@laboperator/eslint-config-base": "npm:~0.1.9"
     eslint-plugin-cypress: "npm:^5.2.0"
     eslint-plugin-mocha: "npm:^11.2.0"
   languageName: unknown
@@ -376,17 +376,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@laboperator/eslint-config-drivers@workspace:packages/eslint-config-drivers"
   dependencies:
-    "@laboperator/eslint-config-base": "npm:~0.1.8"
+    "@laboperator/eslint-config-base": "npm:~0.1.9"
     eslint-plugin-jasmine: "npm:^4.2.2"
     eslint-plugin-jest: "npm:^29.2.1"
   languageName: unknown
   linkType: soft
 
-"@laboperator/eslint-config-node@npm:~0.1.8, @laboperator/eslint-config-node@workspace:packages/eslint-config-node":
+"@laboperator/eslint-config-node@npm:~0.1.9, @laboperator/eslint-config-node@workspace:packages/eslint-config-node":
   version: 0.0.0-use.local
   resolution: "@laboperator/eslint-config-node@workspace:packages/eslint-config-node"
   dependencies:
-    "@laboperator/eslint-config-base": "npm:~0.1.8"
+    "@laboperator/eslint-config-base": "npm:~0.1.9"
     "@types/node": "npm:*"
   languageName: unknown
   linkType: soft
@@ -395,7 +395,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@laboperator/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
-    "@laboperator/eslint-config-base": "npm:~0.1.8"
+    "@laboperator/eslint-config-base": "npm:~0.1.9"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^7.0.1"
   languageName: unknown
@@ -406,8 +406,8 @@ __metadata:
   resolution: "@laboperator/workspace@workspace:."
   dependencies:
     "@babel/core": "npm:^7.28.5"
-    "@laboperator/config": "npm:~0.1.8"
-    "@laboperator/eslint-config-node": "npm:~0.1.8"
+    "@laboperator/config": "npm:~0.1.9"
+    "@laboperator/eslint-config-node": "npm:~0.1.9"
     eslint: "npm:^8.57.1"
     execa: "npm:^9.6.0"
     fs-extra: "npm:^11.3.2"

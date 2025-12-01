@@ -1,6 +1,6 @@
 {
   "name": "@laboperator/eslint-config-drivers",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "",
   "keywords": [],
   "repository": {
@@ -12,7 +12,7 @@
   "author": "Laboperator GmbH",
   "main": "./eslint/index.js",
   "dependencies": {
-    "@laboperator/eslint-config-base": "~0.1.8",
+    "@laboperator/eslint-config-base": "~0.1.9",
     "eslint-plugin-jasmine": "^4.2.2",
     "eslint-plugin-jest": "^29.2.1"
   },
