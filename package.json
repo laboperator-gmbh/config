@@ -22,7 +22,7 @@
     "@laboperator-gmbh/config": "~0.1.10",
     "@laboperator-gmbh/eslint-config-node": "~0.1.10",
     "eslint": "^8.57.1",
-    "execa": "^9.6.0",
+    "execa": "^9.6.1",
     "fs-extra": "^11.3.2",
     "husky": "^9.1.7",
     "prettier": "^3.7.3",
