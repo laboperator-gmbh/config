@@ -1,0 +1,8 @@
+releases:
+  "@laboperator-gmbh/config": minor
+  "@laboperator-gmbh/eslint-config-base": minor
+  "@laboperator-gmbh/eslint-config-cypress": minor
+  "@laboperator-gmbh/eslint-config-drivers": minor
+  "@laboperator-gmbh/eslint-config-node": minor
+  "@laboperator-gmbh/eslint-config-react": minor
+  root: minor
