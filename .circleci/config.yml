@@ -1,13 +1,12 @@
 version: 2.1
 
 aliases:
-  when_release: &when_release
-    condition:
-      matches: { pattern: /^release\/.*$/, value: << pipeline.git.branch >> }
   node_env: &node_env
     docker:
       - image: cimg/node:lts
-    working_directory: ~/repo
+  when_release: &when_release
+    condition:
+      matches: { pattern: /^release\/.*$/, value: << pipeline.git.branch >> }
 
 commands:
   yarn_cache_install:
@@ -23,6 +22,14 @@ commands:
           key: packages-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}
 
 jobs:
+  build:
+    <<: *node_env
+    steps:
+      - checkout
+      - yarn_cache_install
+      - run: |
+          yarn tsc
+          node dist/spec
   check:
     <<: *node_env
     steps:
@@ -49,6 +56,9 @@ jobs:
       - run: yarn lint
 
 workflows:
+  build:
+    jobs:
+      - build
   tests:
     jobs:
       - check

@@ -39,10 +39,10 @@ Run `verdaccio` in a second terminal. Visit `http://localhost:4873` to confirm t
 
 Backup your `~/.npmrc` file, since the following steps will modify it.
 
-Configure NPM to use the local registry for all `@laboperator` packages.
+Configure NPM to use the local registry for all `@laboperator-gmbh` packages.
 
 ```bash
-npm set "@laboperator:registry" "http://localhost:4873"
+npm set "@laboperator-gmbh:registry" "http://localhost:4873"
 npm adduser --registry http://localhost:4873 # Use your GitHub username and email.
 ```
 
@@ -50,7 +50,7 @@ Yarn 4+ no longer reads `~/.npmrc` and need to be configured separately. Add the
 
 ```yaml
 npmScopes:
-  laboperator:
+  laboperator-gmbh:
     npmRegistryServer: http://localhost:4873
     npmPublishRegistry: http://localhost:4873
 
@@ -58,7 +58,7 @@ unsafeHttpWhitelist:
   - localhost
 ```
 
-then run `yarn npm login --scope laboperator`.
+then run `yarn npm login --scope laboperator-gmbh`.
 
 #### Publishing to Verdaccio
 
@@ -70,4 +70,4 @@ To publish all packages run `yarn publish`
 
 Confirm that the packages were published by visiting: `http://localhost:4873`
 
-To unpublish packages run `yarn workspaces foreach --all --exclude root exec npm unpublish --force`
+To unpublish packages run `npm unpublish --workspaces --force`

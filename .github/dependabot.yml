@@ -1,36 +1,24 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: "/"
+    directory: /
     schedule:
       interval: daily
-      time: "06:00"
-      timezone: "Europe/Berlin"
+      time: '06:00'
+      timezone: Europe/Berlin
     rebase-strategy: disabled
     labels:
-      - "dependencies"
-      - "automerge"
+      - dependencies
+      - automerge
       - "kodiak: merge.method = 'squash'"
-    ignore:
-      # Need to wait until every plugin support eslint 9
-      #
-      # It also dropped support for .eslintrc file in favor of flat config
-      # Which means that we might need to completely rewrite/restructure our config
-      #
-      # ref: https://eslint.org/docs/latest/use/configure/migration-guide
-      #
-      - dependency-name: eslint
-        versions:
-          - '>= 9'
     groups:
       babel:
         patterns:
-          - "@babel/*"
-          - "browserslist"
+          - '@babel/*'
+          - 'browserslist'
       eslint:
         patterns:
-          - "eslint"
-          - "eslint-*"
-      typescript-eslint:
-        patterns:
-          - "@typescript-eslint/*"
+          - '@eslint/*'
+          - 'eslint'
+          - 'eslint-*'
+          - 'typescript-eslint'
