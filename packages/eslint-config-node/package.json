@@ -1,11 +1,11 @@
 {
   "name": "@laboperator-gmbh/eslint-config-node",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "description": "",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/laboperator-gmbh/config.git",
+    "url": "github:laboperator-gmbh/config",
     "directory": "packages/eslint-config-node"
   },
   "license": "Apache-2.0",
@@ -14,7 +14,7 @@
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
   "dependencies": {
-    "@laboperator-gmbh/eslint-config-base": "~0.1.10",
+    "@laboperator-gmbh/eslint-config-base": "~0.2.0",
     "@types/node": "*",
     "eslint": "^9.39.1",
     "globals": "^16.5.0"
