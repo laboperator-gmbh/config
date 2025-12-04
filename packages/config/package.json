@@ -1,11 +1,11 @@
 {
   "name": "@laboperator-gmbh/config",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "description": "",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/laboperator-gmbh/config.git",
+    "url": "github:laboperator-gmbh/config",
     "directory": "packages/config"
   },
   "license": "Apache-2.0",
