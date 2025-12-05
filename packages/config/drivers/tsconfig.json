@@ -2,6 +2,7 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "esModuleInterop": true,
     "paths": {
       "@src/*": ["src/*"],
       "@fixtures/*": ["spec/fixtures/*"]
