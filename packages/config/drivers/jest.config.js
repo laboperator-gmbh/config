@@ -1,6 +1,4 @@
-import type { Config } from 'jest';
-
-const config: Config = {
+export default {
   collectCoverageFrom: ['<rootDir>/src/**/*.{ts,js}'],
   coveragePathIgnorePatterns: ['<rootDir>/src/lib/Simulator.ts'],
 
@@ -19,5 +17,3 @@ const config: Config = {
 
   verbose: true,
 };
-
-export default config;
