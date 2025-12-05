@@ -97,6 +97,8 @@ export default defineConfig([
         {
           args: 'after-used',
           argsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
           ignoreRestSiblings: true,
           varsIgnorePattern: '^_',
         },
