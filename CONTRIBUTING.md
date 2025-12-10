@@ -17,7 +17,7 @@ All version changes should use [Semantic Versioning](https://semver.org/).
 
 ## Releases
 
-Make sure to pull the latest changes from `main` and `develop`.
+Make sure to pull the latest changes from `main`.
 
 Run `yarn bump:apply` at the repo's root to apply the current release strategy.
 
