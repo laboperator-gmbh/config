@@ -11,7 +11,16 @@
   "license": "Apache-2.0",
   "author": "Laboperator GmbH",
   "exports": {
-    "./drivers/*": "./drivers/*",
+    "./drivers/babel.config": {
+      "types": "./drivers/babel.config.d.ts",
+      "default": "./drivers/babel.config.js"
+    },
+    "./drivers/jest.config": {
+      "types": "./drivers/jest.config.d.ts",
+      "default": "./drivers/jest.config.js"
+    },
+    "./drivers/tsconfig": "./drivers/tsconfig.json",
+    "./drivers/tsconfig.json": "./drivers/tsconfig.json",
     "./prettier": "./.prettierrc.json",
     "./tsconfig": "./tsconfig.json"
   },
