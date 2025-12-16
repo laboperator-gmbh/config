@@ -21,7 +21,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-sort-destructure-keys": "^2.0.0",
-    "typescript-eslint": "^8.49.0"
+    "typescript-eslint": "^8.50.0"
   },
   "publishConfig": {
     "access": "public"
