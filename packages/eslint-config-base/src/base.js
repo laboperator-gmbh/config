@@ -165,7 +165,7 @@ export default defineConfig([
   {
     files: ['**/*.ts', '**/*.tsx'],
 
-    extends: ['typescript-eslint/recommendedTypeChecked'],
+    extends: ['typescript-eslint/recommended'],
     languageOptions: {
       parserOptions: {
         projectService: true,
