@@ -1,6 +1,6 @@
 {
   "name": "@laboperator-gmbh/eslint-config-node",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "keywords": [],
   "repository": {
@@ -14,7 +14,7 @@
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
   "dependencies": {
-    "@laboperator-gmbh/eslint-config-base": "~0.2.0",
+    "@laboperator-gmbh/eslint-config-base": "~0.2.1",
     "@types/node": "*",
     "eslint": "^9.39.2",
     "globals": "^17.0.0"
