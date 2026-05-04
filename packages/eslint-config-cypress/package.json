@@ -15,7 +15,7 @@
   "types": "./src/index.d.ts",
   "dependencies": {
     "@laboperator-gmbh/eslint-config-base": "~0.2.1",
-    "eslint": "^10.2.1",
+    "eslint": "^10.3.0",
     "eslint-plugin-cypress": "^6.4.0",
     "eslint-plugin-mocha": "^11.2.0"
   },
