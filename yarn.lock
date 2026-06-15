@@ -913,7 +913,6 @@ __metadata:
   dependencies:
     "@laboperator-gmbh/eslint-config-node": "npm:~0.2.1"
     eslint: "npm:^10.5.0"
-    eslint-plugin-jasmine: "npm:^4.2.2"
     eslint-plugin-jest: "npm:^29.15.2"
   languageName: unknown
   linkType: soft
@@ -2483,13 +2482,6 @@ __metadata:
   peerDependencies:
     eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9
   checksum: 10c0/bfb1b8fc8800398e62ddfefbf3638d185286edfed26dfe00875cc2846d954491b4f5112457831588b757fa789384e1ae585f812614c4797f0499fa234fd4a48b
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-jasmine@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "eslint-plugin-jasmine@npm:4.2.2"
-  checksum: 10c0/dccc3b54f3312b4917b4e9c816c9d128a264a36fa127ea65a72587cb47c7d094dc92f1bcbb40ae6770d68c5f5bbbb02b263bd6e4d6d8b7b35427c46bca1f20e6
   languageName: node
   linkType: hard
 

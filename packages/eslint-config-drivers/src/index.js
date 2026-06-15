@@ -31,7 +31,17 @@ export default defineConfig(
     },
   },
   {
-    files: ['spec/**/*.ts', 'packages/*/spec/**/*.ts'],
+    files: [
+      'test/**',
+      'tests/**',
+      'spec/**',
+      '**/{test,spec}_helper/**',
+      '**/__tests__/**',
+      '**/__mocks__/**',
+      '**/test.{js,ts}',
+      '**/test-*.{js,ts}',
+      '**/*{.,_}{test,spec}.{js,ts}',
+    ],
     ...jest.configs['flat/recommended'],
   },
 );
