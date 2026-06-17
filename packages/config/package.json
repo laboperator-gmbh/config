@@ -28,7 +28,7 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@babel/core": "^7.29.7",
+    "@babel/core": "^8.0.0",
     "prettier": "^3.8.4",
     "sort-package-json": "^4.0.0",
     "typescript": "^6.0.3"
