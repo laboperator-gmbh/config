@@ -11,6 +11,9 @@ updates:
       - dependency-name: '@babel/*'
         versions:
           - '^8.0.0'
+      - dependency-name: '@types/node'
+        versions:
+          - '>= 25'
     groups:
       babel:
         patterns:
