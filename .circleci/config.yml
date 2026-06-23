@@ -3,7 +3,7 @@ version: 2.1
 aliases:
   node_env: &node_env
     docker:
-      - image: cimg/node:lts
+      - image: cimg/node:24.17
   when_release: &when_release
     condition:
       matches: { pattern: /^release\/.*$/, value: << pipeline.git.branch >> }
