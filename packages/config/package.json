@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.29.7",
-    "prettier": "^3.8.4",
+    "prettier": "^3.9.1",
     "sort-package-json": "^4.0.0",
     "typescript": "^6.0.3"
   },
