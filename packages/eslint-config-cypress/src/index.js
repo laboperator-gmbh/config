@@ -11,10 +11,15 @@ export default defineConfig(
     rules: {
       'max-nested-callbacks': 'off',
       'max-statements': 'off',
+      // no longer part of mocha's recommended config since v12
+      'mocha/consistent-spacing-between-blocks': 'error',
+      'mocha/max-top-level-suites': 'error',
+      // cypress command chains expose `.then()` but are not promises
+      'mocha/no-async-in-sync-tests': 'off',
       'mocha/no-exclusive-tests': 'error',
-      'mocha/no-hooks-for-single-case': 'off',
+      'mocha/no-hooks-for-single-child': 'off',
       'mocha/no-mocha-arrows': 'off',
-      'mocha/no-setup-in-describe': 'off',
+      'mocha/no-setup-in-suite': 'off',
     },
   },
 );
