@@ -16,7 +16,7 @@
   "dependencies": {
     "@laboperator-gmbh/eslint-config-base": "~0.2.1",
     "eslint": "^10.9.0",
-    "eslint-plugin-cypress": "^7.0.0",
+    "eslint-plugin-cypress": "^7.0.1",
     "eslint-plugin-mocha": "^12.0.2"
   },
   "publishConfig": {
