@@ -5,8 +5,9 @@
     "allowUmdGlobalAccess": true,
     "allowUnreachableCode": false,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "jsx": "preserve",
-    "module": "Node16",
+    "module": "Node20",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": true,
@@ -14,7 +15,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES2024"
+    "target": "ES2024",
   },
-  "compileOnSave": false
+  "compileOnSave": false,
 }

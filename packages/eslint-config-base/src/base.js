@@ -173,6 +173,8 @@ export default defineConfig([
     },
     plugins: { 'typescript-eslint': tseslint },
     rules: {
+      '@typescript-eslint/no-unsafe-argument': 'error',
+      '@typescript-eslint/no-unsafe-assignment': 'error',
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
