@@ -1,0 +1,8 @@
+releases:
+  "@laboperator-gmbh/config": patch
+  "@laboperator-gmbh/eslint-config-base": patch
+  "@laboperator-gmbh/eslint-config-cypress": patch
+  "@laboperator-gmbh/eslint-config-drivers": patch
+  "@laboperator-gmbh/eslint-config-node": patch
+  "@laboperator-gmbh/eslint-config-react": patch
+  root: patch
