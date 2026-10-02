@@ -1,9 +1,12 @@
+import { fixupPluginRules } from '@eslint/compat';
 import { defineConfig } from 'eslint/config';
 import importPlugin from 'eslint-plugin-import';
 
 export default defineConfig([
   {
-    plugins: { import: importPlugin },
+    // eslint-plugin-import still calls SourceCode methods ESLint 10 removed,
+    // e.g. getTokenOrCommentAfter when import/order reports.
+    plugins: { import: fixupPluginRules(importPlugin) },
     settings: {
       'import/core-modules': [],
       'import/ignore': [
