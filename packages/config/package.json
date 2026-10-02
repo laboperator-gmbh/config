@@ -9,7 +9,7 @@
     "directory": "packages/config"
   },
   "license": "Apache-2.0",
-  "author": "Laboperator GmbH",
+  "author": "LabAthena GmbH",
   "exports": {
     "./drivers/babel.config": {
       "types": "./drivers/babel.config.d.ts",

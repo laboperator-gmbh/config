@@ -9,7 +9,7 @@
     "directory": "packages/eslint-config-base"
   },
   "license": "Apache-2.0",
-  "author": "Laboperator GmbH",
+  "author": "LabAthena GmbH",
   "type": "module",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
