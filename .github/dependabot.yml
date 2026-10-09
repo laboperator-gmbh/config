@@ -15,13 +15,23 @@ updates:
         versions:
           - '>= 25'
     groups:
+      minor-and-patch:
+        patterns:
+          - '*'
+        update-types:
+          - minor
+          - patch
       babel:
         patterns:
           - '@babel/*'
           - 'browserslist'
+        update-types:
+          - major
       eslint:
         patterns:
           - '@eslint/*'
           - 'eslint'
           - 'eslint-*'
           - 'typescript-eslint'
+        update-types:
+          - major
