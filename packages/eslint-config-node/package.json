@@ -16,8 +16,8 @@
   "dependencies": {
     "@laboperator-gmbh/eslint-config-base": "~0.2.2",
     "@types/node": "*",
-    "eslint": "^10.13.0",
-    "globals": "^17.13.0"
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0"
   },
   "publishConfig": {
     "access": "public"
