@@ -18,7 +18,7 @@
     "sort": "sort-package-json ./package.json packages/*/package.json"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.7",
+    "@babel/core": "^7.29.13",
     "@laboperator-gmbh/config": "~0.2.2",
     "@laboperator-gmbh/eslint-config-node": "~0.2.2",
     "eslint": "^10.14.0",
